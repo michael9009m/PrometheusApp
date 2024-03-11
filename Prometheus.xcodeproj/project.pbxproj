@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D83E21AE2B9FCE8B00BA5C22 /* PrometheusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21AD2B9FCE8B00BA5C22 /* PrometheusApp.swift */; };
+		D83E21B02B9FCE8B00BA5C22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21AF2B9FCE8B00BA5C22 /* ContentView.swift */; };
+		D83E21B22B9FCE8D00BA5C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83E21B12B9FCE8D00BA5C22 /* Assets.xcassets */; };
+		D83E21B52B9FCE8D00BA5C22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83E21B42B9FCE8D00BA5C22 /* Preview Assets.xcassets */; };
+		D83E21BF2B9FCE8E00BA5C22 /* PrometheusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21BE2B9FCE8E00BA5C22 /* PrometheusTests.swift */; };
+		D83E21C92B9FCE8E00BA5C22 /* PrometheusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21C82B9FCE8E00BA5C22 /* PrometheusUITests.swift */; };
+		D83E21CB2B9FCE8E00BA5C22 /* PrometheusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21CA2B9FCE8E00BA5C22 /* PrometheusUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D83E21BB2B9FCE8E00BA5C22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D83E21A22B9FCE8B00BA5C22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83E21A92B9FCE8B00BA5C22;
+			remoteInfo = Prometheus;
+		};
+		D83E21C52B9FCE8E00BA5C22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D83E21A22B9FCE8B00BA5C22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83E21A92B9FCE8B00BA5C22;
+			remoteInfo = Prometheus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D83E21AA2B9FCE8B00BA5C22 /* Prometheus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prometheus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83E21AD2B9FCE8B00BA5C22 /* PrometheusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrometheusApp.swift; sourceTree = "<group>"; };
+		D83E21AF2B9FCE8B00BA5C22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D83E21B12B9FCE8D00BA5C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D83E21B42B9FCE8D00BA5C22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D83E21BA2B9FCE8E00BA5C22 /* PrometheusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrometheusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83E21BE2B9FCE8E00BA5C22 /* PrometheusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrometheusTests.swift; sourceTree = "<group>"; };
+		D83E21C42B9FCE8E00BA5C22 /* PrometheusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrometheusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83E21C82B9FCE8E00BA5C22 /* PrometheusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrometheusUITests.swift; sourceTree = "<group>"; };
+		D83E21CA2B9FCE8E00BA5C22 /* PrometheusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrometheusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D83E21A72B9FCE8B00BA5C22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83E21B72B9FCE8E00BA5C22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83E21C12B9FCE8E00BA5C22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D83E21A12B9FCE8B00BA5C22 = {
+			isa = PBXGroup;
+			children = (
+				D83E21AC2B9FCE8B00BA5C22 /* Prometheus */,
+				D83E21BD2B9FCE8E00BA5C22 /* PrometheusTests */,
+				D83E21C72B9FCE8E00BA5C22 /* PrometheusUITests */,
+				D83E21AB2B9FCE8B00BA5C22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D83E21AB2B9FCE8B00BA5C22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D83E21AA2B9FCE8B00BA5C22 /* Prometheus.app */,
+				D83E21BA2B9FCE8E00BA5C22 /* PrometheusTests.xctest */,
+				D83E21C42B9FCE8E00BA5C22 /* PrometheusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D83E21AC2B9FCE8B00BA5C22 /* Prometheus */ = {
+			isa = PBXGroup;
+			children = (
+				D83E21AD2B9FCE8B00BA5C22 /* PrometheusApp.swift */,
+				D83E21AF2B9FCE8B00BA5C22 /* ContentView.swift */,
+				D83E21B12B9FCE8D00BA5C22 /* Assets.xcassets */,
+				D83E21B32B9FCE8D00BA5C22 /* Preview Content */,
+			);
+			path = Prometheus;
+			sourceTree = "<group>";
+		};
+		D83E21B32B9FCE8D00BA5C22 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D83E21B42B9FCE8D00BA5C22 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D83E21BD2B9FCE8E00BA5C22 /* PrometheusTests */ = {
+			isa = PBXGroup;
+			children = (
+				D83E21BE2B9FCE8E00BA5C22 /* PrometheusTests.swift */,
+			);
+			path = PrometheusTests;
+			sourceTree = "<group>";
+		};
+		D83E21C72B9FCE8E00BA5C22 /* PrometheusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D83E21C82B9FCE8E00BA5C22 /* PrometheusUITests.swift */,
+				D83E21CA2B9FCE8E00BA5C22 /* PrometheusUITestsLaunchTests.swift */,
+			);
+			path = PrometheusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D83E21A92B9FCE8B00BA5C22 /* Prometheus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83E21CE2B9FCE8E00BA5C22 /* Build configuration list for PBXNativeTarget "Prometheus" */;
+			buildPhases = (
+				D83E21A62B9FCE8B00BA5C22 /* Sources */,
+				D83E21A72B9FCE8B00BA5C22 /* Frameworks */,
+				D83E21A82B9FCE8B00BA5C22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prometheus;
+			productName = Prometheus;
+			productReference = D83E21AA2B9FCE8B00BA5C22 /* Prometheus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D83E21B92B9FCE8E00BA5C22 /* PrometheusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83E21D12B9FCE8E00BA5C22 /* Build configuration list for PBXNativeTarget "PrometheusTests" */;
+			buildPhases = (
+				D83E21B62B9FCE8E00BA5C22 /* Sources */,
+				D83E21B72B9FCE8E00BA5C22 /* Frameworks */,
+				D83E21B82B9FCE8E00BA5C22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83E21BC2B9FCE8E00BA5C22 /* PBXTargetDependency */,
+			);
+			name = PrometheusTests;
+			productName = PrometheusTests;
+			productReference = D83E21BA2B9FCE8E00BA5C22 /* PrometheusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D83E21C32B9FCE8E00BA5C22 /* PrometheusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83E21D42B9FCE8E00BA5C22 /* Build configuration list for PBXNativeTarget "PrometheusUITests" */;
+			buildPhases = (
+				D83E21C02B9FCE8E00BA5C22 /* Sources */,
+				D83E21C12B9FCE8E00BA5C22 /* Frameworks */,
+				D83E21C22B9FCE8E00BA5C22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83E21C62B9FCE8E00BA5C22 /* PBXTargetDependency */,
+			);
+			name = PrometheusUITests;
+			productName = PrometheusUITests;
+			productReference = D83E21C42B9FCE8E00BA5C22 /* PrometheusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D83E21A22B9FCE8B00BA5C22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					D83E21A92B9FCE8B00BA5C22 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					D83E21B92B9FCE8E00BA5C22 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = D83E21A92B9FCE8B00BA5C22;
+					};
+					D83E21C32B9FCE8E00BA5C22 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = D83E21A92B9FCE8B00BA5C22;
+					};
+				};
+			};
+			buildConfigurationList = D83E21A52B9FCE8B00BA5C22 /* Build configuration list for PBXProject "Prometheus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D83E21A12B9FCE8B00BA5C22;
+			productRefGroup = D83E21AB2B9FCE8B00BA5C22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D83E21A92B9FCE8B00BA5C22 /* Prometheus */,
+				D83E21B92B9FCE8E00BA5C22 /* PrometheusTests */,
+				D83E21C32B9FCE8E00BA5C22 /* PrometheusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D83E21A82B9FCE8B00BA5C22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83E21B52B9FCE8D00BA5C22 /* Preview Assets.xcassets in Resources */,
+				D83E21B22B9FCE8D00BA5C22 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83E21B82B9FCE8E00BA5C22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83E21C22B9FCE8E00BA5C22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D83E21A62B9FCE8B00BA5C22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83E21B02B9FCE8B00BA5C22 /* ContentView.swift in Sources */,
+				D83E21AE2B9FCE8B00BA5C22 /* PrometheusApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83E21B62B9FCE8E00BA5C22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83E21BF2B9FCE8E00BA5C22 /* PrometheusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83E21C02B9FCE8E00BA5C22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83E21CB2B9FCE8E00BA5C22 /* PrometheusUITestsLaunchTests.swift in Sources */,
+				D83E21C92B9FCE8E00BA5C22 /* PrometheusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D83E21BC2B9FCE8E00BA5C22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83E21A92B9FCE8B00BA5C22 /* Prometheus */;
+			targetProxy = D83E21BB2B9FCE8E00BA5C22 /* PBXContainerItemProxy */;
+		};
+		D83E21C62B9FCE8E00BA5C22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83E21A92B9FCE8B00BA5C22 /* Prometheus */;
+			targetProxy = D83E21C52B9FCE8E00BA5C22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D83E21CC2B9FCE8E00BA5C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D83E21CD2B9FCE8E00BA5C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D83E21CF2B9FCE8E00BA5C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Prometheus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMartinez.Prometheus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D83E21D02B9FCE8E00BA5C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Prometheus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMartinez.Prometheus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D83E21D22B9FCE8E00BA5C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMartinez.PrometheusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prometheus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Prometheus";
+			};
+			name = Debug;
+		};
+		D83E21D32B9FCE8E00BA5C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMartinez.PrometheusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prometheus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Prometheus";
+			};
+			name = Release;
+		};
+		D83E21D52B9FCE8E00BA5C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMartinez.PrometheusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Prometheus;
+			};
+			name = Debug;
+		};
+		D83E21D62B9FCE8E00BA5C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMartinez.PrometheusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Prometheus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D83E21A52B9FCE8B00BA5C22 /* Build configuration list for PBXProject "Prometheus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83E21CC2B9FCE8E00BA5C22 /* Debug */,
+				D83E21CD2B9FCE8E00BA5C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83E21CE2B9FCE8E00BA5C22 /* Build configuration list for PBXNativeTarget "Prometheus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83E21CF2B9FCE8E00BA5C22 /* Debug */,
+				D83E21D02B9FCE8E00BA5C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83E21D12B9FCE8E00BA5C22 /* Build configuration list for PBXNativeTarget "PrometheusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83E21D22B9FCE8E00BA5C22 /* Debug */,
+				D83E21D32B9FCE8E00BA5C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83E21D42B9FCE8E00BA5C22 /* Build configuration list for PBXNativeTarget "PrometheusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83E21D52B9FCE8E00BA5C22 /* Debug */,
+				D83E21D62B9FCE8E00BA5C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D83E21A22B9FCE8B00BA5C22 /* Project object */;
+}
