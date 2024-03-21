@@ -1,66 +1,94 @@
 import SwiftUI
 
 struct UserProfileSummaryView: View {
-    @State private var profileImage: Image = Image(systemName: "person.circle.fill") // Default placeholder image
+    @EnvironmentObject var viewModel: SurveyViewModel
+    @State private var profileImage: Image = Image(systemName: "person.circle.fill")
     @State private var isShowingImagePicker = false
     @State private var inputImage: UIImage?
-
-    var userProfile: UserProfileData
+    // Navigation path for iOS 16 navigation
+    @State private var navigationPath = NavigationPath()
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 20) {
-                // Profile Image
-                profileImage
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 140, height: 140)
-                    .clipShape(Circle())
-                    .shadow(radius: 10)
-                    .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                    .padding(.top, 100)
-                    .onTapGesture {
-                        self.isShowingImagePicker = true
+        NavigationStack(path: $navigationPath) {
+            ScrollView {
+                VStack(spacing: 20) {
+                    profileImage
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 140, height: 140)
+                        .clipShape(Circle())
+                        .shadow(radius: 10)
+                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                        .padding(.top, 100)
+                        .onTapGesture {
+                            isShowingImagePicker = true
+                        }
+                        .sheet(isPresented: $isShowingImagePicker, onDismiss: loadImage) {
+                            ImagePicker(image: self.$inputImage)
+                        }
+
+                    Text("Profile Summary")
+                        .font(.title)
+                        .foregroundColor(Color.white)
+                        .fontWeight(.bold)
+
+                    VStack(alignment: .leading, spacing: 10) {
+                        DetailCardView(title: "Weight", detail: viewModel.userProfile.weight)
+                        DetailCardView(title: "Height", detail: viewModel.userProfile.height)
+                        DetailCardView(title: "Date of Birth", detail: formatDate(viewModel.userProfile.dob))
+                        DetailCardView(title: "Fitness Goal", detail: viewModel.userProfile.fitnessGoal)
+                        DetailCardView(title: "Exercise Frequency", detail: viewModel.userProfile.exerciseFrequency + " times a week")
                     }
-                    .sheet(isPresented: $isShowingImagePicker, onDismiss: loadImage) {
-                        ImagePicker(image: self.$inputImage)
+                    .padding([.horizontal, .bottom])
+
+                    Button("Looks Good!") {
+                        // Assuming `FitnessJourneyStart` is a destination identified by an enum or similar
+                        navigationPath.append(NavigationDestination.fitnessJourneyStart)
                     }
-                
-                Text("Profile Summary").font(.title).foregroundColor(Color.white)
-                // Survey Answers
-                VStack(alignment: .leading, spacing: 10) {
-                    // Weight Card
-                    DetailCardView(title: "Weight", detail: userProfile.weight + " kg")
-
-                    // Height Card
-                    DetailCardView(title: "Height", detail: userProfile.height + " cm")
-
-                    // Age Card
-                    DetailCardView(title: "Age", detail: userProfile.age)
-
-                    // Fitness Goal Card
-                    DetailCardView(title: "Fitness Goal", detail: userProfile.fitnessGoal)
-
-                    // Exercise Frequency Card
-                    DetailCardView(title: "Exercise Frequency", detail: userProfile.exerciseFrequency)
+                    .buttonStyle(FilledButton())
+                    .padding()
                 }
-                .padding([.horizontal, .bottom])
+            }
+            .background(LinearGradient(gradient: Gradient(colors: [Color.black, Color.blue]), startPoint: .bottom, endPoint: .top))
+            .edgesIgnoringSafeArea(.all)
+        }
+        // Define the destination for the navigation
+        .navigationDestination(for: NavigationDestination.self) { destination in
+            switch destination {
+            case .fitnessJourneyStart:
+                FitnessJourneyStart {
+                    // Handle the action to restart the survey
+                    viewModel.currentQuestionIndex = 0
+                    navigationPath.removeLast()
+                }
             }
         }
-        .background(LinearGradient(gradient: Gradient(colors: [Color.black, Color.blue]), startPoint: .bottom, endPoint: .center))
-        .edgesIgnoringSafeArea(.top)
     }
 
     func loadImage() {
         guard let inputImage = inputImage else { return }
         profileImage = Image(uiImage: inputImage)
     }
+    
+    func formatDate(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.timeStyle = .none
+        return formatter.string(from: date)
+    }
 }
+
+// Enum to identify navigation destinations
+enum NavigationDestination {
+    case fitnessJourneyStart
+}
+
+
 
 struct DetailCardView: View {
     let title: String
     let detail: String
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Text(title.uppercased())
@@ -101,7 +129,7 @@ struct ImagePicker: UIViewControllerRepresentable {
             self.parent = parent
         }
 
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let uiImage = info[.originalImage] as? UIImage {
                 parent.image = uiImage
             }

@@ -11,7 +11,7 @@ class SurveyViewModel: ObservableObject {
 struct UserProfileData {
     var weight: String = ""
     var height: String = ""
-    var age: String = ""
+    var dob: Date = Date()
     var fitnessGoal: String = ""
     var exerciseFrequency: String = ""
 }

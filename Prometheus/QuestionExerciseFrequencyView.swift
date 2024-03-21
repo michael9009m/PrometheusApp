@@ -2,14 +2,15 @@ import SwiftUI
 
 struct QuestionExerciseFrequencyView: View {
     @Binding var currentQuestionIndex: Int
-    @State private var exerciseFrequency: Double = 3 // Starting value, adjust as needed
+        @EnvironmentObject var viewModel: SurveyViewModel
+        @State private var exerciseFrequency: Double = 3 // Starting Value, adjust as needed
 
     var body: some View {
         VStack {
-            // ProgressBar integration
-                        ProgressBar(progress: Float(currentQuestionIndex) / 4.0) // Since there are 5 questions, dividing by 4 (0-indexed)
-                            .frame(height: 8)
-                            .padding(.horizontal)
+
+            ProgressBar(progress: Float(currentQuestionIndex) / 4.0) // Since there are 5 questions, dividing by 4 (0-indexed)
+                .frame(height: 8)
+                .padding(.horizontal)
             Spacer()
             Text("How often do you exercise per week?").font(.title).foregroundColor(Color.blue)
             Text("\(Int(exerciseFrequency)) times")
@@ -34,9 +35,10 @@ struct QuestionExerciseFrequencyView: View {
                 
                 Spacer()
                 
-                // Next button
                 Button("Next") {
                     withAnimation {
+                        let newFrequency = String(format: "%.0f", exerciseFrequency)
+                        viewModel.userProfile.exerciseFrequency = newFrequency
                         currentQuestionIndex += 1
                     }
                 }
@@ -49,6 +51,3 @@ struct QuestionExerciseFrequencyView: View {
         .padding()
     }
 }
-
-
-

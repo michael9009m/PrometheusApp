@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SurveyProgressionView: View {
     @EnvironmentObject var viewModel: SurveyViewModel
+    @State private var showJourneyStart = false // Correctly declare this state variable
 
     var body: some View {
         ZStack {
@@ -9,20 +10,29 @@ struct SurveyProgressionView: View {
             // Dynamically switch the question view based on currentQuestionIndex
             switch viewModel.currentQuestionIndex {
             case 0:
-                QuestionWeightView()
+                QuestionWeightView().environmentObject(viewModel)
             case 1:
-                QuestionHeightView()
+                QuestionHeightView().environmentObject(viewModel)
             case 2:
-                QuestionAgeView()
+                QuestionDOBView().environmentObject(viewModel)
             case 3:
-                QuestionFitnessGoalView(currentQuestionIndex: $viewModel.currentQuestionIndex)
+                QuestionFitnessGoalView(currentQuestionIndex: $viewModel.currentQuestionIndex).environmentObject(viewModel)
             case 4:
-                QuestionExerciseFrequencyView(currentQuestionIndex: $viewModel.currentQuestionIndex)
+                QuestionExerciseFrequencyView(currentQuestionIndex: $viewModel.currentQuestionIndex).environmentObject(viewModel)
             default:
-                UserProfileSummaryView(userProfile: viewModel.userProfile)
+                if !showJourneyStart {
+                    UserProfileSummaryView()
+                        .environmentObject(viewModel)
+                } else {
+                    FitnessJourneyStart(restartSurvey: {
+                        viewModel.currentQuestionIndex = 0
+                        showJourneyStart = false
+                    })
+                }
             }
         }
         .transition(.slide) // Adds a slide transition between views
         .animation(.easeInOut, value: viewModel.currentQuestionIndex) // Animates the transition
     }
 }
+
