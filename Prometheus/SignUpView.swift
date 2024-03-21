@@ -1,18 +1,95 @@
-//
-//  SignUpView.swift
-//  Prometheus
-//
-//  Created by Michael Martinez on 3/11/24.
-//
-
 import SwiftUI
+import Firebase
 
 struct SignUpView: View {
+    @State private var email = ""
+    @State private var password = ""
+    @State private var userIsLoggedIn = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if userIsLoggedIn {
+            HomeView()
+        } else {
+            content
+        }
+    }
+
+    var content: some View {
+        ZStack {
+            Color.black
+
+            RoundedRectangle(cornerRadius: 30, style: .continuous)
+                .foregroundStyle(.linearGradient(colors: [.pink, .red], startPoint: .topLeading, endPoint: .bottomTrailing))
+                .frame(width: 1000, height: 400)
+                .rotationEffect(.degrees(135))
+                .offset(y: -350)
+
+            VStack(spacing: 20) {
+                Text("Welcome")
+                    .foregroundColor(.white)
+                    .font(.system(size: 40, weight: .bold, design: .rounded))
+                    .offset(x: -100, y: -100)
+
+                TextField("Email", text: $email)
+                    .foregroundColor(.white)
+                    .textFieldStyle(.plain)
+                    .placeholder(when: email.isEmpty) {
+                        Text("Email")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+
+                Rectangle()
+                    .frame(width: 350, height: 1)
+                    .foregroundColor(.white)
+
+                SecureField("Password", text: $password)
+                    .foregroundColor(.white)
+                    .textFieldStyle(.plain)
+                    .placeholder(when: password.isEmpty) {
+                        Text("Password")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+
+                Rectangle()
+                    .frame(width: 350, height: 1)
+                    .foregroundColor(.white)
+
+                Button {
+                    register()
+                } label: {
+                    Text("Sign up")
+                        .bold()
+                        .frame(width: 200, height: 40)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                .fill(.linearGradient(colors: [.pink, .red], startPoint: .top, endPoint: .bottomTrailing))
+                        )
+                        .foregroundColor(.white)
+                }
+                .padding(.top)
+                .offset(y: 100)
+            }
+            .frame(width: 350)
+        }
+        .ignoresSafeArea()
+    }
+
+    func register() {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                // User successfully registered, toggle userIsLoggedIn
+                userIsLoggedIn.toggle()
+            }
+        }
     }
 }
 
-#Preview {
-    SignUpView()
+struct Welcome_Previews: PreviewProvider {
+    static var previews: some View {
+        SignUpView()
+    }
 }
