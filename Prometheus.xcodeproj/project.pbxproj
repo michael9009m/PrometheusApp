@@ -7,13 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47CA7B752BBE67AB008EAA1F /* UserTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CA7B742BBE67AB008EAA1F /* UserTestView.swift */; };
+		47CA7B782BBE67BA008EAA1F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CA7B762BBE67BA008EAA1F /* User.swift */; };
+		47CA7B792BBE67BA008EAA1F /* UserFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CA7B772BBE67BA008EAA1F /* UserFetcher.swift */; };
+		47CA7B7B2BBE683B008EAA1F /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 47CA7B7A2BBE683B008EAA1F /* FirebaseDatabase */; };
+		47CA7B7D2BBE683B008EAA1F /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 47CA7B7C2BBE683B008EAA1F /* FirebaseDatabaseSwift */; };
+		B957EF022BAC30BF0085EF3A /* ForgotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF012BAC30BF0085EF3A /* ForgotView.swift */; };
+		B957EF042BAC447D0085EF3A /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF032BAC447D0085EF3A /* SocialView.swift */; };
+		B957EF082BAC44AC0085EF3A /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF072BAC44AC0085EF3A /* AnalyticsView.swift */; };
+		B957EF0A2BAC44C80085EF3A /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF092BAC44C80085EF3A /* WorkoutView.swift */; };
+		B957EF222BACA3240085EF3A /* FitnessJourneyStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF212BACA3240085EF3A /* FitnessJourneyStart.swift */; };
+		B957EF242BACA3280085EF3A /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF232BACA3280085EF3A /* ProgressBar.swift */; };
+		B957EF262BACA32A0085EF3A /* QuestionDOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF252BACA32A0085EF3A /* QuestionDOBView.swift */; };
+		B957EF282BACA32C0085EF3A /* QuestionExerciseFrequencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF272BACA32C0085EF3A /* QuestionExerciseFrequencyView.swift */; };
+		B957EF2A2BACA32E0085EF3A /* QuestionFitnessGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF292BACA32E0085EF3A /* QuestionFitnessGoalView.swift */; };
+		B957EF2C2BACA3300085EF3A /* QuestionHeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF2B2BACA3300085EF3A /* QuestionHeightView.swift */; };
+		B957EF2E2BACA3320085EF3A /* QuestionWeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF2D2BACA3320085EF3A /* QuestionWeightView.swift */; };
+		B957EF302BACA3340085EF3A /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF2F2BACA3340085EF3A /* SurveyViewModel.swift */; };
+		B957EF322BACA3360085EF3A /* SurveyProgressionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF312BACA3360085EF3A /* SurveyProgressionView.swift */; };
+		B957EF342BACA3380085EF3A /* UserProfileSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957EF332BACA3380085EF3A /* UserProfileSummaryView.swift */; };
+		D817C0C52BA2971100B8F240 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D817C0C42BA2971100B8F240 /* FirebaseAuth */; };
+		D817C0C72BA2971100B8F240 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D817C0C62BA2971100B8F240 /* FirebaseFirestore */; };
+		D817C0C92BA2987C00B8F240 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D817C0C82BA2987C00B8F240 /* GoogleService-Info.plist */; };
+		D817C0CB2BA29EA100B8F240 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817C0CA2BA29EA100B8F240 /* HomeView.swift */; };
 		D83E21AE2B9FCE8B00BA5C22 /* PrometheusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21AD2B9FCE8B00BA5C22 /* PrometheusApp.swift */; };
-		D83E21B02B9FCE8B00BA5C22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21AF2B9FCE8B00BA5C22 /* ContentView.swift */; };
+		D83E21B02B9FCE8B00BA5C22 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21AF2B9FCE8B00BA5C22 /* Welcome.swift */; };
 		D83E21B22B9FCE8D00BA5C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83E21B12B9FCE8D00BA5C22 /* Assets.xcassets */; };
 		D83E21B52B9FCE8D00BA5C22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83E21B42B9FCE8D00BA5C22 /* Preview Assets.xcassets */; };
 		D83E21BF2B9FCE8E00BA5C22 /* PrometheusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21BE2B9FCE8E00BA5C22 /* PrometheusTests.swift */; };
 		D83E21C92B9FCE8E00BA5C22 /* PrometheusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21C82B9FCE8E00BA5C22 /* PrometheusUITests.swift */; };
 		D83E21CB2B9FCE8E00BA5C22 /* PrometheusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21CA2B9FCE8E00BA5C22 /* PrometheusUITestsLaunchTests.swift */; };
+		D83E21D82B9FD1B400BA5C22 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21D72B9FD1B400BA5C22 /* SignUpView.swift */; };
+		D83E21DA2B9FD1C300BA5C22 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E21D92B9FD1C300BA5C22 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +59,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47CA7B742BBE67AB008EAA1F /* UserTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTestView.swift; path = Prometheus/Model/UserTestView.swift; sourceTree = SOURCE_ROOT; };
+		47CA7B762BBE67BA008EAA1F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		47CA7B772BBE67BA008EAA1F /* UserFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFetcher.swift; sourceTree = "<group>"; };
+		B957EF012BAC30BF0085EF3A /* ForgotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotView.swift; sourceTree = "<group>"; };
+		B957EF032BAC447D0085EF3A /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
+		B957EF072BAC44AC0085EF3A /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		B957EF092BAC44C80085EF3A /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		B957EF202BACA2C10085EF3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B957EF212BACA3240085EF3A /* FitnessJourneyStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessJourneyStart.swift; sourceTree = "<group>"; };
+		B957EF232BACA3280085EF3A /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		B957EF252BACA32A0085EF3A /* QuestionDOBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDOBView.swift; sourceTree = "<group>"; };
+		B957EF272BACA32C0085EF3A /* QuestionExerciseFrequencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionExerciseFrequencyView.swift; sourceTree = "<group>"; };
+		B957EF292BACA32E0085EF3A /* QuestionFitnessGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFitnessGoalView.swift; sourceTree = "<group>"; };
+		B957EF2B2BACA3300085EF3A /* QuestionHeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHeightView.swift; sourceTree = "<group>"; };
+		B957EF2D2BACA3320085EF3A /* QuestionWeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionWeightView.swift; sourceTree = "<group>"; };
+		B957EF2F2BACA3340085EF3A /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		B957EF312BACA3360085EF3A /* SurveyProgressionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyProgressionView.swift; sourceTree = "<group>"; };
+		B957EF332BACA3380085EF3A /* UserProfileSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSummaryView.swift; sourceTree = "<group>"; };
+		D817C0C82BA2987C00B8F240 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D817C0CA2BA29EA100B8F240 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D83E21AA2B9FCE8B00BA5C22 /* Prometheus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prometheus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83E21AD2B9FCE8B00BA5C22 /* PrometheusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrometheusApp.swift; sourceTree = "<group>"; };
-		D83E21AF2B9FCE8B00BA5C22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D83E21AF2B9FCE8B00BA5C22 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		D83E21B12B9FCE8D00BA5C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D83E21B42B9FCE8D00BA5C22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D83E21BA2B9FCE8E00BA5C22 /* PrometheusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrometheusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +89,8 @@
 		D83E21C42B9FCE8E00BA5C22 /* PrometheusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrometheusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83E21C82B9FCE8E00BA5C22 /* PrometheusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrometheusUITests.swift; sourceTree = "<group>"; };
 		D83E21CA2B9FCE8E00BA5C22 /* PrometheusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrometheusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D83E21D72B9FD1B400BA5C22 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D83E21D92B9FD1C300BA5C22 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +98,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47CA7B7D2BBE683B008EAA1F /* FirebaseDatabaseSwift in Frameworks */,
+				47CA7B7B2BBE683B008EAA1F /* FirebaseDatabase in Frameworks */,
+				D817C0C52BA2971100B8F240 /* FirebaseAuth in Frameworks */,
+				D817C0C72BA2971100B8F240 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +122,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B957EF1D2BACA0BF0085EF3A /* questions */ = {
+			isa = PBXGroup;
+			children = (
+				B957EF2D2BACA3320085EF3A /* QuestionWeightView.swift */,
+				B957EF232BACA3280085EF3A /* ProgressBar.swift */,
+				B957EF252BACA32A0085EF3A /* QuestionDOBView.swift */,
+				B957EF272BACA32C0085EF3A /* QuestionExerciseFrequencyView.swift */,
+				B957EF292BACA32E0085EF3A /* QuestionFitnessGoalView.swift */,
+				B957EF2B2BACA3300085EF3A /* QuestionHeightView.swift */,
+				B957EF2F2BACA3340085EF3A /* SurveyViewModel.swift */,
+				B957EF312BACA3360085EF3A /* SurveyProgressionView.swift */,
+				B957EF332BACA3380085EF3A /* UserProfileSummaryView.swift */,
+				B957EF212BACA3240085EF3A /* FitnessJourneyStart.swift */,
+			);
+			path = questions;
+			sourceTree = "<group>";
+		};
+		B957EF392BACE8D80085EF3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B957EF012BAC30BF0085EF3A /* ForgotView.swift */,
+				D83E21D92B9FD1C300BA5C22 /* LoginView.swift */,
+				B957EF032BAC447D0085EF3A /* SocialView.swift */,
+				B957EF092BAC44C80085EF3A /* WorkoutView.swift */,
+				B957EF072BAC44AC0085EF3A /* AnalyticsView.swift */,
+				D817C0CA2BA29EA100B8F240 /* HomeView.swift */,
+				D83E21D72B9FD1B400BA5C22 /* SignUpView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B957EF3A2BACE8E40085EF3A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				47CA7B762BBE67BA008EAA1F /* User.swift */,
+				47CA7B772BBE67BA008EAA1F /* UserFetcher.swift */,
+				47CA7B742BBE67AB008EAA1F /* UserTestView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B957EF3B2BACE8F50085EF3A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B957EF3F2BACE94B0085EF3A /* Authentification */,
+				B957EF3E2BACE9410085EF3A /* Profile */,
+				B957EF3D2BACE9140085EF3A /* root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B957EF3C2BACE8FE0085EF3A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D83E21AD2B9FCE8B00BA5C22 /* PrometheusApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B957EF3D2BACE9140085EF3A /* root */ = {
+			isa = PBXGroup;
+			children = (
+				D83E21AF2B9FCE8B00BA5C22 /* Welcome.swift */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		B957EF3E2BACE9410085EF3A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B957EF3F2BACE94B0085EF3A /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
 		D83E21A12B9FCE8B00BA5C22 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +226,14 @@
 		D83E21AC2B9FCE8B00BA5C22 /* Prometheus */ = {
 			isa = PBXGroup;
 			children = (
-				D83E21AD2B9FCE8B00BA5C22 /* PrometheusApp.swift */,
-				D83E21AF2B9FCE8B00BA5C22 /* ContentView.swift */,
+				B957EF3C2BACE8FE0085EF3A /* App */,
+				B957EF3B2BACE8F50085EF3A /* Core */,
+				B957EF3A2BACE8E40085EF3A /* Components */,
+				B957EF392BACE8D80085EF3A /* Model */,
+				B957EF1D2BACA0BF0085EF3A /* questions */,
+				B957EF202BACA2C10085EF3A /* Preview Assets.xcassets */,
 				D83E21B12B9FCE8D00BA5C22 /* Assets.xcassets */,
+				D817C0C82BA2987C00B8F240 /* GoogleService-Info.plist */,
 				D83E21B32B9FCE8D00BA5C22 /* Preview Content */,
 			);
 			path = Prometheus;
@@ -143,6 +280,12 @@
 			dependencies = (
 			);
 			name = Prometheus;
+			packageProductDependencies = (
+				D817C0C42BA2971100B8F240 /* FirebaseAuth */,
+				D817C0C62BA2971100B8F240 /* FirebaseFirestore */,
+				47CA7B7A2BBE683B008EAA1F /* FirebaseDatabase */,
+				47CA7B7C2BBE683B008EAA1F /* FirebaseDatabaseSwift */,
+			);
 			productName = Prometheus;
 			productReference = D83E21AA2B9FCE8B00BA5C22 /* Prometheus.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +358,9 @@
 				Base,
 			);
 			mainGroup = D83E21A12B9FCE8B00BA5C22;
+			packageReferences = (
+				D817C0C32BA2971000B8F240 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D83E21AB2B9FCE8B00BA5C22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +379,7 @@
 			files = (
 				D83E21B52B9FCE8D00BA5C22 /* Preview Assets.xcassets in Resources */,
 				D83E21B22B9FCE8D00BA5C22 /* Assets.xcassets in Resources */,
+				D817C0C92BA2987C00B8F240 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +404,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83E21B02B9FCE8B00BA5C22 /* ContentView.swift in Sources */,
+				B957EF322BACA3360085EF3A /* SurveyProgressionView.swift in Sources */,
+				D83E21B02B9FCE8B00BA5C22 /* Welcome.swift in Sources */,
+				B957EF242BACA3280085EF3A /* ProgressBar.swift in Sources */,
+				B957EF082BAC44AC0085EF3A /* AnalyticsView.swift in Sources */,
+				B957EF2C2BACA3300085EF3A /* QuestionHeightView.swift in Sources */,
+				D83E21D82B9FD1B400BA5C22 /* SignUpView.swift in Sources */,
+				D83E21DA2B9FD1C300BA5C22 /* LoginView.swift in Sources */,
+				47CA7B752BBE67AB008EAA1F /* UserTestView.swift in Sources */,
+				B957EF222BACA3240085EF3A /* FitnessJourneyStart.swift in Sources */,
+				B957EF302BACA3340085EF3A /* SurveyViewModel.swift in Sources */,
+				B957EF0A2BAC44C80085EF3A /* WorkoutView.swift in Sources */,
+				D817C0CB2BA29EA100B8F240 /* HomeView.swift in Sources */,
+				B957EF282BACA32C0085EF3A /* QuestionExerciseFrequencyView.swift in Sources */,
+				B957EF262BACA32A0085EF3A /* QuestionDOBView.swift in Sources */,
+				B957EF2A2BACA32E0085EF3A /* QuestionFitnessGoalView.swift in Sources */,
 				D83E21AE2B9FCE8B00BA5C22 /* PrometheusApp.swift in Sources */,
+				B957EF022BAC30BF0085EF3A /* ForgotView.swift in Sources */,
+				B957EF2E2BACA3320085EF3A /* QuestionWeightView.swift in Sources */,
+				47CA7B792BBE67BA008EAA1F /* UserFetcher.swift in Sources */,
+				B957EF042BAC447D0085EF3A /* SocialView.swift in Sources */,
+				B957EF342BACA3380085EF3A /* UserProfileSummaryView.swift in Sources */,
+				47CA7B782BBE67BA008EAA1F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +749,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D817C0C32BA2971000B8F240 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47CA7B7A2BBE683B008EAA1F /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseDatabase;
+		};
+		47CA7B7C2BBE683B008EAA1F /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseDatabaseSwift;
+		};
+		D817C0C42BA2971100B8F240 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D817C0C32BA2971000B8F240 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D817C0C62BA2971100B8F240 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D817C0C32BA2971000B8F240 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D83E21A22B9FCE8B00BA5C22 /* Project object */;
 }
