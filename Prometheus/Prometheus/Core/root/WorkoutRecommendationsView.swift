@@ -1,10 +1,3 @@
-//
-//  WorkoutRecommendationsView.swift
-//  Prometheus
-//
-//  Created by Abigail Abeyta on 4/15/24.
-//
-
 import SwiftUI
 import AVKit // Necessary if you plan to embed videos in the future
 

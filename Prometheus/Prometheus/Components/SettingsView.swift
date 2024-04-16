@@ -117,7 +117,7 @@ struct MyInfoView: View {
     
     var body: some View {
         ZStack {
-            Color(.textBox).edgesIgnoringSafeArea(.top)
+            Color(.textBox).edgesIgnoringSafeArea(.all)
             
             VStack {
                 Text("My Info Content")
@@ -163,7 +163,7 @@ struct MyInfoView: View {
                 .padding()
                 .font(.subheadline)
                 .foregroundColor(.white)
-                .background(Color.newbackground).edgesIgnoringSafeArea(.top)
+                .background(Color.newbackground)
                 .cornerRadius(8)
             }
         }
